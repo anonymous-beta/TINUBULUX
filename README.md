@@ -1,3 +1,5 @@
+<img src="file_00000000aa7071f4a447333952d6ec10.png" alt="TINUBULUX Banner" width="800"/>
+
 # TINUBULUX 🔥
 
 > *"Real power. No simulations. Built by Anonymous-beta."*
