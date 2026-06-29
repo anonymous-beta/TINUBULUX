@@ -1,0 +1,55 @@
+# TINUBULUX Configuration
+# Modify defaults here or override via CLI
+
+# Attack defaults
+defaults:
+  port: 80
+  connections: 500
+  duration: 60
+  threads: 4
+
+# HTTP Flood Settings
+http:
+  timeout: 5
+  keep_alive: true
+  randomize_path: true
+  randomize_headers: true
+  follow_redirects: false
+  
+# SYN Flood Settings
+syn:
+  spoof_source: false
+  packet_size: 40
+
+# UDP Flood Settings
+udp:
+  packet_size: 1024
+  min_size: 512
+  max_size: 1472
+
+# Slowloris Settings
+slowloris:
+  sockets_per_thread: 150
+  sleep_interval: 15
+  timeout: 5
+
+# DNS Amplification Settings
+dns:
+  dns_servers:
+    - "8.8.8.8"
+    - "1.1.1.1"
+    - "9.9.9.9"
+  query_type: "ANY"
+  amplification_domain: "example.com"
+
+# Proxy Settings
+proxy:
+  enabled: false
+  rotation_interval: 30
+  verify_ssl: false
+
+# User Agents
+user_agents:
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
+  - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
