@@ -27,7 +27,7 @@ python3 tinubulux.py -t target.com -p 80 -m slowloris -c 100
 # DNS Amplification
 python3 tinubulux.py -t 10.0.0.5 -p 53 -m dns -c 50
 ```
-Flag	Description	Default	
+## Flag	Description	Default	
 `-t, --target`	Target IP/hostname	required	
 `-p, --port`	Target port	80	
 `-m, --method`	Attack method (http/syn/udp/slowloris/dns)	http	
@@ -39,7 +39,7 @@ Flag	Description	Default
 `--config`	Config file path	config.yaml	
 `-v, --verbose`	Verbose output	false	
 
-# ARCHITECTURE
+## ARCHITECTURE
 tinubulux.py          # Entry point
 ├── core/
 │   ├── engine.py       # Orchestrator
@@ -55,7 +55,7 @@ tinubulux.py          # Entry point
 │   └── logger.py       # Console logging
 └── config.yaml         # Default configuration
 
-# Requirements
+## Requirements
  
 Python 3.8+
  
